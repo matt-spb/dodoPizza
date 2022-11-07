@@ -8,6 +8,12 @@
 import UIKit
 
 class MenuViewController: UIViewController {
+    
+    private lazy var locationView = {
+        let view = UIView()
+        
+        return view
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()

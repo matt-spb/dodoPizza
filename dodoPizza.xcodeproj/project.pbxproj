@@ -8,21 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		D7FD96C529198F8F00D0FD9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FD96C429198F8F00D0FD9C /* AppDelegate.swift */; };
-		D7FD96C729198F8F00D0FD9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FD96C629198F8F00D0FD9C /* SceneDelegate.swift */; };
-		D7FD96C929198F8F00D0FD9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FD96C829198F8F00D0FD9C /* ViewController.swift */; };
-		D7FD96CC29198F8F00D0FD9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7FD96CA29198F8F00D0FD9C /* Main.storyboard */; };
+		D7FD96C929198F8F00D0FD9C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FD96C829198F8F00D0FD9C /* MenuViewController.swift */; };
 		D7FD96CE29198F9000D0FD9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7FD96CD29198F9000D0FD9C /* Assets.xcassets */; };
-		D7FD96D129198F9000D0FD9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7FD96CF29198F9000D0FD9C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D7FD96C129198F8F00D0FD9C /* dodoPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dodoPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7FD96C429198F8F00D0FD9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D7FD96C629198F8F00D0FD9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D7FD96C829198F8F00D0FD9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D7FD96CB29198F8F00D0FD9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7FD96C829198F8F00D0FD9C /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		D7FD96CD29198F9000D0FD9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D7FD96D029198F9000D0FD9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7FD96D229198F9000D0FD9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,15 +50,44 @@
 		D7FD96C329198F8F00D0FD9C /* dodoPizza */ = {
 			isa = PBXGroup;
 			children = (
-				D7FD96C429198F8F00D0FD9C /* AppDelegate.swift */,
-				D7FD96C629198F8F00D0FD9C /* SceneDelegate.swift */,
-				D7FD96C829198F8F00D0FD9C /* ViewController.swift */,
-				D7FD96CA29198F8F00D0FD9C /* Main.storyboard */,
-				D7FD96CD29198F9000D0FD9C /* Assets.xcassets */,
-				D7FD96CF29198F9000D0FD9C /* LaunchScreen.storyboard */,
-				D7FD96D229198F9000D0FD9C /* Info.plist */,
+				D7FD96D82919901F00D0FD9C /* Sources */,
+				D7FD96D92919902F00D0FD9C /* Resources */,
 			);
 			path = dodoPizza;
+			sourceTree = "<group>";
+		};
+		D7FD96D82919901F00D0FD9C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D7FD96DB2919907A00D0FD9C /* Scenes */,
+				D7FD96DA2919907000D0FD9C /* App */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D7FD96D92919902F00D0FD9C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D7FD96CD29198F9000D0FD9C /* Assets.xcassets */,
+				D7FD96D229198F9000D0FD9C /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D7FD96DA2919907000D0FD9C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D7FD96C429198F8F00D0FD9C /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D7FD96DB2919907A00D0FD9C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D7FD96C829198F8F00D0FD9C /* MenuViewController.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7FD96D129198F9000D0FD9C /* LaunchScreen.storyboard in Resources */,
 				D7FD96CE29198F9000D0FD9C /* Assets.xcassets in Resources */,
-				D7FD96CC29198F8F00D0FD9C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7FD96C929198F8F00D0FD9C /* ViewController.swift in Sources */,
+				D7FD96C929198F8F00D0FD9C /* MenuViewController.swift in Sources */,
 				D7FD96C529198F8F00D0FD9C /* AppDelegate.swift in Sources */,
-				D7FD96C729198F8F00D0FD9C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		D7FD96CA29198F8F00D0FD9C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D7FD96CB29198F8F00D0FD9C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D7FD96CF29198F9000D0FD9C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D7FD96D029198F9000D0FD9C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D7FD96D329198F9000D0FD9C /* Debug */ = {
@@ -289,12 +290,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 986NFG9Y4U;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = dodoPizza/Info.plist;
+				INFOPLIST_FILE = dodoPizza/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,12 +317,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 986NFG9Y4U;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = dodoPizza/Info.plist;
+				INFOPLIST_FILE = dodoPizza/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
